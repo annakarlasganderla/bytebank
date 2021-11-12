@@ -8,8 +8,14 @@ import { Component } from "@angular/core";
 
 export class NovaTranferenciaComponent {
 
+  valor: number;
+  destino: number;
+
   transferir() {
-    console.log("cheguei aq")
+    console.log("cheguei aq");
+    console.log('valor: ', this.valor);
+    console.log('destino: ', this.destino);
   }
+
 
 }
