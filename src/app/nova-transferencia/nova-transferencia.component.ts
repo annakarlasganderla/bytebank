@@ -8,4 +8,8 @@ import { Component } from "@angular/core";
 
 export class NovaTranferenciaComponent {
 
+  transferir() {
+    console.log("cheguei aq")
+  }
+
 }
