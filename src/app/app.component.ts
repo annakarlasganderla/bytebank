@@ -13,7 +13,7 @@ export class AppComponent {
   // valor: number;
 
   // refatorado
-  transferencia: any;
+  transferencias: any[] = [];  // array inicializado
 
   transferir($event) {
     console.log($event);
@@ -22,6 +22,7 @@ export class AppComponent {
   //  this.valor = $event.valor;
 
   // refatorado
-  this.transferencia = $event;
+    const transferencia = {...$event, data: new Date() }
+    this.transferencias.push(transferencia); // a cada trasnfaaz]erencia, ele coloca em uma posiçao do array
   }
 }

@@ -1,4 +1,8 @@
-<!--a ? serve para nao dar erro-->
-<!--se tiver a propriedade valor/destino pega ela-->
-<p>Valor: {{ transferencia?.valor }}</p>
-<p>Destino: {{ transferencia?.destino }}</p>
+<div *ngFor="let transferencia of transferencias">
+    <!--a ? serve para nao dar erro-->
+    <!--se tiver a propriedade valor/destino pega ela-->
+    <p>Data: {{ transferencia?.data }}</p>
+    <p>Destino: {{ transferencia?.destino }}</p>
+    <p>Destino: {{ transferencia?.destino }}</p>
+</div>
+
