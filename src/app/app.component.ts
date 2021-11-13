@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bytebank';
+
+  // forma 1
+  // destino: number;
+  // valor: number;
+
+  // refatorado
+  transferencia: any;
+
+  transferir($event) {
+    console.log($event);
+  // forma 1
+  //  this.destino = $event.destino;
+  //  this.valor = $event.valor;
+
+  // refatorado
+  this.transferencia = $event;
+  }
 }
